@@ -31,14 +31,6 @@ mod writer;
 pub use backend::OssBuilder as Oss;
 pub use config::OssConfig;
 
-/// Re-export of the [`reqsign_aliyun_oss`] crate that this service signs
-/// requests with.
-///
-/// [`Oss::credential_provider_chain`] takes a chain of providers for
-/// [`reqsign_aliyun_oss::Credential`]. Implement providers against this
-/// re-export and [`reqsign_core`], using versions compatible with this service.
-pub use reqsign_aliyun_oss;
-
 /// URI scheme used for service registration and scheme-driven construction.
 pub const OSS_SCHEME: &str = "oss";
 

@@ -391,7 +391,7 @@ impl OssBuilder {
     /// override this chain.
     ///
     /// Build the chain with [`reqsign_core::ProvideCredentialChain`] and
-    /// [`crate::reqsign_aliyun_oss::Credential`].
+    /// [`reqsign_aliyun_oss::Credential`].
     ///
     /// Set [`Credential::expires_in`] for temporary credentials. The reqsign
     /// signer caches credentials and calls this chain again when they approach
